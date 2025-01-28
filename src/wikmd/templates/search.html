@@ -68,7 +68,7 @@
     {% endfor %}
     <ul id="list">
         {% for res in results|sort(attribute="score", reverse=True) %}
-            <li>
+            <li class="list-none">
                 <p><a href="{{res.path}}/{{ res.title }}">{%if res.path != "."%}{{res.path}}/{%endif%}{{ res.title }}</a></p>
                 <p>{{ res.highlights|safe }}</p>
             </li>

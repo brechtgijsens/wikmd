@@ -31,12 +31,15 @@
 
 }
 
-[data-theme='wikmd-light']{
+[data-theme='wikmd-light'] {
   color-scheme: light;
   /* Primary */
-  --p:  0.627 0.192 271.5; /* #617AFA */
-  --pf: 0.527 0.192 271.5; /* Slightly darker for focus */
-  --pc: 1 0 271.5; /* White for text on primary color */
+  --p: 0.627 0.192 271.5;
+  /* #617AFA */
+  --pf: 0.527 0.192 271.5;
+  /* Slightly darker for focus */
+  --pc: 1 0 271.5;
+  /* White for text on primary color */
 
   /* Other settings */
   --rounded-box: 0.5rem;
@@ -50,16 +53,21 @@
   --border-btn: 1px;
   --tab-border: 1px;
   --tab-radius: 0.5rem;
+  --bg-codeblock: var(--bg-codeblock-light);
+  --text-color: var(--txt-light);
 }
 
 /* VALUES NEED TO BE OKCLU !!*/
 [data-theme='wikmd-dark'] {
 
   color-scheme: dark;
-   /* Primary */
-  --p:  0.627 0.192 271.5; /* #617AFA */
-  --pf: 0.527 0.192 271.5; /* Slightly darker for focus */
-  --pc: 1 0 271.5; /* White for text on primary color */
+  /* Primary */
+  --p: 0.627 0.192 271.5;
+  /* #617AFA */
+  --pf: 0.527 0.192 271.5;
+  /* Slightly darker for focus */
+  --pc: 1 0 271.5;
+  /* White for text on primary color */
   /* base 100 */
   --b1: 0.27 0 248;
   /* base 300 */
@@ -79,5 +87,6 @@
   --border-btn: 1px;
   --tab-border: 1px;
   --tab-radius: 0.5rem;
+  --bg-codeblock: var(--bg-codeblock-dark);
+  --text-color: var(--txt-dark);
 }
-

@@ -1,8 +1,8 @@
 @import "wiki.colors.css";
 
 body {
-  background-color: var(--bg-light);
-  color: var(--txt-light);
+  background-color: var(color-scheme);
+  color: var(--text-color);
 }
 
 .modal-content {
@@ -14,7 +14,7 @@ blockquote {
   padding: 5px 50px;
   margin-left: 0px;
   border-left: 4px solid var(--quotes-color);
-  background-color: var(--bg-codeblock-light);
+  background-color: var(--bg-codeblock);
 }
 
 blockquote p {
@@ -25,7 +25,7 @@ blockquote p {
 code,
 pre {
   font-family: monospace;
-  background-color: var(--bg-codeblock-light);
+  background-color: var(--bg-codeblock);
   color: #800;
   border-radius: 5px;
   padding: 4px;
@@ -33,7 +33,7 @@ pre {
 }
 
 pre {
-  background-color: var(--bg-codeblock-light);
+  background-color: var(--bg-codeblock);
   padding: 6px;
   border-radius: 6px;
   position: relative;
@@ -64,7 +64,7 @@ figure {
 }
 
 .hljs {
-  background-color: var(--bg-codeblock-light);
+  background-color: var(--bg-codeblock);
 }
 
 
@@ -90,7 +90,7 @@ h1,
 h2,
 h3,
 h4 {
-  margin-top: 0 !important;
+  margin-top: 0.75rem !important;
   margin-bottom: .5rem !important;
 
 }
@@ -150,7 +150,7 @@ div.html-integration {
   padding-right: 1.5rem
 }
 
-input[type=text] {
+input[type=text].search {
   background-color: white;
   background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iY3VycmVudENvbG9yIj48cGF0aCBkPSJNMTguMDMxIDE2LjYxNjhMMjIuMzEzNyAyMC44OTk1TDIwLjg5OTUgMjIuMzEzN0wxNi42MTY4IDE4LjAzMUMxNS4wNzY5IDE5LjI2MyAxMy4xMjQgMjAgMTEgMjBDNi4wMzIgMjAgMiAxNS45NjggMiAxMUMyIDYuMDMyIDYuMDMyIDIgMTEgMkMxNS45NjggMiAyMCA2LjAzMiAyMCAxMUMyMCAxMy4xMjQgMTkuMjYzIDE1LjA3NjkgMTguMDMxIDE2LjYxNjhaTTE2LjAyNDcgMTUuODc0OEMxNy4yNDc1IDE0LjYxNDYgMTggMTIuODk1NiAxOCAxMUMxOCA3LjEzMjUgMTQuODY3NSA0IDExIDRDNy4xMzI1IDQgNCA3LjEzMjUgNCAxMUM0IDE0Ljg2NzUgNy4xMzI1IDE4IDExIDE4QzEyLjg5NTYgMTggMTQuNjE0NiAxNy4yNDc1IDE1Ljg3NDggMTYuMDI0N0wxNi4wMjQ3IDE1Ljg3NDhaIj48L3BhdGg+PC9zdmc+');
   background-position: 10px 10px;
@@ -163,9 +163,14 @@ input[type=text] {
   font-weight: bold;
 }
 
-ul {
+ul,
+ol {
   list-style: inside !important;
   margin: 1em !important;
+}
+
+ol {
+  list-style-type: decimal !important;
 }
 
 ul.menu {
@@ -178,4 +183,17 @@ ul.menu-item {
   list-style: none !important;
   margin: 0em !important;
   margin-left: 1em !important;
+}
+
+pre.sourceCode {
+  margin: 20px 0px !important;
+}
+
+p {
+  margin: 10px 0px !important;
+
+}
+
+div.alert {
+  margin: 10px 0px !important;
 }

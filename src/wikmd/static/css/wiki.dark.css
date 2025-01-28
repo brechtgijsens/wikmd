@@ -1,59 +1,60 @@
 @import "wiki.colors.css";
 
 body {
-    background-color: var(--bg-dark);
-    color: var(--txt-dark);
+  background-color: var(--bg-dark);
+  color: var(--text-color);
 }
 
 .modal-content {
-    background-color: var(--bg-modal-dark);
-    color: var(--txt-dark);
+  background-color: var(--bg-modal-dark);
+  color: var(--txt-dark);
 }
 
-code, pre {
-    background-color: var(--bg-codeblock-dark);
-    color: #d88;
+code,
+pre {
+  background-color: var(--bg-codeblock);
+  color: #d88;
 }
 
 blockquote {
-    padding: 5px 50px;
-    margin-left: 0px;
-    border-left: 4px solid var(--quotes-color);
-    background-color: var(--bg-codeblock-dark);
+  padding: 5px 50px;
+  margin-left: 0px;
+  border-left: 4px solid var(--quotes-color);
+  background-color: var(--bg-codeblock);
 }
 
-blockquote p{
-    margin-top:10px;
-    font-weight: 300;
+blockquote p {
+  margin-top: 10px;
+  font-weight: 300;
 }
 
 pre {
-    background-color: var(--bg-codeblock-dark);
+  background-color: var(--bg-codeblock);
 }
 
-div.html-integration{
+div.html-integration {
   background-color: var(--html-integration-background-dark)
 }
 
 .hljs {
-    background-color: var(--bg-codeblock-dark);
+  background-color: var(--bg-codeblock);
 }
 
 .form-control,
 .form-control:focus {
-    background-color: var(--bg-codeblock-dark);
-    border-color: var(--bg-modal-dark);
-    color: var(--txt-dark);
+  background-color: var(--bg-codeblock-dark);
+  border-color: var(--bg-modal-dark);
+  color: var(--txt-dark);
 }
 
 .list-group-item,
 .list-group-item {
-    background-color: var(--bg-dark);
-    color: var(--txt-dark);
+  background-color: var(--bg-dark);
+  color: var(--txt-dark);
 }
 
 .link-dark:visited,
 .link-dark:hover,
 .link-dark {
-    color: var(--txt-dark);
+  color: var(--txt-dark);
 }
