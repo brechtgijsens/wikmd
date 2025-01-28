@@ -80,15 +80,15 @@ def extract_toc(input_html):
     soup = BeautifulSoup(input_html, 'html.parser')
     headers = soup.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
 
-    toc_html = '<ul class="menu rounded-box w-56 w-full">'
-    current_level = 0
+    toc_html = '<ul class="menu rounded-box w-56 w-full m-0 p-0">'
+    current_level = 1
 
     for header in headers:
         level = int(header.name[1])
 
         # Adjust TOC structure based on header levels
         while level > current_level:
-            toc_html += '<ul>'
+            toc_html += '<ul class="menu-item">'
             current_level += 1
         while level < current_level:
             toc_html += '</ul>'
